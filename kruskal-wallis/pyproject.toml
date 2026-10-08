@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kw-approx"
+version = "0.3.0"
+description = "Higher-order asymptotic approximations for the Kruskal-Wallis test statistic"
+readme = "README_EN.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Jong-Seung Lee", email = "new9279@gachon.ac.kr"},
+    {name = "Hidetoshi Murakami", email = "hide-murakami@rs.tus.ac.jp"},
+    {name = "Hyung-Tae Ha", email = "htha@gachon.ac.kr"},
+]
+keywords = [
+    "kruskal-wallis",
+    "nonparametric",
+    "saddlepoint",
+    "edgeworth",
+    "gram-charlier",
+    "hypothesis-testing",
+    "statistics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "matplotlib>=3.5",
+    "pandas>=1.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/zongseung/KS-test"
+Repository = "https://github.com/zongseung/KS-test"
+Issues = "https://github.com/zongseung/KS-test/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["kw_approx"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
