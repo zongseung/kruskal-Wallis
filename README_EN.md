@@ -1,4 +1,4 @@
-**English** | [**Korean**](README.md)
+**English** | [**Korean**](README_KO.md) | [Default README](README.md)
 
 # kw-approx: Higher Order Asymptotic Approximations for Kruskal-Wallis Statistics
 
@@ -52,8 +52,9 @@ KS-test/
 |   +-- test_approximations.py    #   37 test cases
 |
 |
-|-- README.md                     # Korean documentation
-|-- README_EN.md                  # English documentation
+|-- README.md                     # Default English documentation
+|-- README_KO.md                  # Korean documentation
+|-- README_EN.md                  # English documentation (legacy path)
 |-- CLAUDE.md
 |-- pyproject.toml
 +-- Kruskal_Wallis_Test.pdf       # Paper PDF
